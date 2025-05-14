@@ -1,2 +1,44 @@
-# docker-todo
-This is a full-stack Todo application built using:  ⚛️ React (Vite) for the frontend  🔧 Node.js (Express) for the backend  🛢️ PostgreSQL as the database  🔄 Prisma as the ORM  🐳 Docker &amp; Docker Compose for containerization  ♻️ Hot Reload enabled in the frontend for smooth development
+# 📝 Todo Application
+
+This is a full-stack **Todo Application** built with modern technologies including PostgreSQL, Prisma, React, Node.js, and Docker. The project is fully containerized using Docker Compose and supports **hot reload in the frontend** for a seamless development experience.
+
+---
+
+## 🚀 Tech Stack
+
+| Layer        | Technology            |
+|--------------|------------------------|
+| Frontend     | [React](https://reactjs.org/) + [Vite](https://vitejs.dev/) |
+| Backend      | [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/) |
+| Database     | [PostgreSQL](https://www.postgresql.org/) |
+| ORM          | [Prisma](https://www.prisma.io/) |
+| Containerization | [Docker](https://www.docker.com/) + [Docker Compose](https://docs.docker.com/compose/) |
+| Dev Experience | Hot Reload via Vite volume mounting and polling |
+
+---
+
+## ✨ Features
+
+- ✅ Create, update, delete todo items
+- 📦 Persistent data storage using PostgreSQL
+- 🧠 Type-safe queries with Prisma ORM
+- 📡 REST API with Express
+- 🐳 Dockerized frontend and backend
+- 🔁 Hot reload in development for the React frontend
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Docker
+- Docker Compose
+
+### Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
