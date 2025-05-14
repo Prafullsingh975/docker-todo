@@ -6,14 +6,14 @@ This is a full-stack **Todo Application** built with modern technologies includi
 
 ## 🚀 Tech Stack
 
-| Layer        | Technology            |
-|--------------|------------------------|
-| Frontend     | [React](https://reactjs.org/) + [Vite](https://vitejs.dev/) |
-| Backend      | [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/) |
-| Database     | [PostgreSQL](https://www.postgresql.org/) |
-| ORM          | [Prisma](https://www.prisma.io/) |
+| Layer            | Technology                                                                             |
+| ---------------- | -------------------------------------------------------------------------------------- |
+| Frontend         | [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)                            |
+| Backend          | [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/)                     |
+| Database         | [PostgreSQL](https://www.postgresql.org/)                                              |
+| ORM              | [Prisma](https://www.prisma.io/)                                                       |
 | Containerization | [Docker](https://www.docker.com/) + [Docker Compose](https://docs.docker.com/compose/) |
-| Dev Experience | Hot Reload via Vite volume mounting and polling |
+| Dev Experience   | Hot Reload via Vite volume mounting and polling                                        |
 
 ---
 
@@ -40,5 +40,20 @@ This is a full-stack **Todo Application** built with modern technologies includi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Prafullsingh975/docker-todo.git
+cd docker-todo
+```
+
+### Run frontend
+
+```bash
+cd client
+docker compose up --build
+```
+
+### Run backend
+
+```bash
+cd server
+docker compose up --build
+```
