@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  postgres_db:
+    image: "postgres"
+    container_name: "postgres_docker"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "myPassword"
+      POSTGRES_USER: "prafull"
+      POSTGRES_DB: "todo"
+    ports:
+      - 5433:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  server:
+    build: .
+    depends_on:
+      - postgres_db
+    container_name: "backend"
+    ports:
+      - "2000:2000"
+    environment:
+      DATABASE_URL_DOCKER: "postgresql://prafull:myPassword@postgres_docker:5432/todo"
+      PORT: "2000"
+      SECRET: "mySuperSecret"
+volumes:
+  postgres_data:
